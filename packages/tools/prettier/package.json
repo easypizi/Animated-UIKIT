@@ -1,0 +1,5 @@
+{
+  "name": "@easypizi/prettier",
+  "version": "2.1.0",
+  "main": "./prettier.config.js"
+}

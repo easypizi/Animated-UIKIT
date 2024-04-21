@@ -1,0 +1,44 @@
+{
+  "name": "@easypizi/icons",
+  "version": "2.1.0",
+  "description": "> TODO: description",
+  "author": {
+    "name": "Ivan Tolstov",
+    "email": "tolstov.career@gmail.com"
+  },
+  "homepage": "",
+  "license": "ISC",
+  "main": "src/components/index.tsx",
+  "types": "src/components",
+  "directories": {
+    "src": "src/components",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "_build": "swc ./src -d lib --copy-files",
+    "_watch": "swc ./src -d lib --copy-files --watch",
+    "test": "node ./__tests__/core.test.js",
+    "type-check": "tsc --noEmit",
+    "eslint": "eslint --ext .ts,tsx,js,jsx src",
+    "lint": "npm run type-check && npm run eslint --",
+    "generate": "svgr --typescript --ext tsx -d ./src/components ./src/svg/ && eslint --fix ./src/components"
+  },
+  "dependencies": {
+    "@storybook/react": "^7.4.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@easypizi/eslint-config": "^2.1.0",
+    "@easypizi/prettier": "^2.1.0",
+    "@svgr/cli": "^8.0.1",
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.78",
+    "@types/react": "^18.2.7"
+  }
+}

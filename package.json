@@ -1,0 +1,36 @@
+{
+  "name": "@easypizi/root",
+  "private": true,
+  "workspaces": [
+    "packages/tools/*",
+    "packages/libs/*",
+    "packages/apps/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">8.0.0"
+  },
+  "scripts": {
+    "build": "lerna run build --concurrency=2",
+    "watch": "lerna run watch --parallel --stream",
+    "version-update": "lerna version --no-git-tag-version --no-push",
+    "lint": "lerna run lint --stream --concurrency=5 -- --max-warnings=0",
+    "clean": "lerna clean",
+    "storybook:start": "lerna run storybook --scope=@easypizi/storybook",
+    "generate-icons": "lerna run generate --scope=@easypizi/icons",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lerna": "^7.1.5",
+    "typescript": "^5.1.6",
+    "vite": "^5.0.0"
+  },
+  "overrides": {
+    "typescript": "^5.1.6"
+  }
+}

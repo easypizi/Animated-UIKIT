@@ -1,0 +1,15 @@
+module.exports = {
+  arrowParens: 'always',
+  bracketSameLine: false,
+  bracketSpacing: true,
+  embeddedLanguageFormatting: 'auto',
+  endOfLine: 'lf',
+  jsxSingleQuote: false,
+  parser: 'typescript',
+  quoteProps: 'as-needed',
+  semi: true,
+  singleAttributePerLine: false,
+  singleQuote: true,
+  tabWidth: 2,
+  trailingComma: 'all',
+};

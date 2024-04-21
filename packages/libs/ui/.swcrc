@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+  "minify": false,
+  "sourceMaps":true,
+  // 🤬 inlineSourcesContent: false - needed for webpack in react-scritps to works fine with new exports in runtime
+  "inlineSourcesContent": false,
+  "isModule": true,
+  // "exclude": ["__stories__/"],
+  "jsc": {
+    "target": "es2016",
+    "parser": {
+        "syntax": "typescript",
+        "tsx": true
+    },
+    "preserveAllComments": false,
+    "transform": {
+      "react": {
+        "runtime": "automatic"
+      }
+    }
+  }
+}
