@@ -1,6 +1,6 @@
 {
   "name": "@easypizi/storybook",
-  "version": "2.1.0",
+  "version": "0.0.1",
   "scripts": {
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
@@ -19,7 +19,7 @@
     "storybook-addon-swc": "^1.2.0"
   },
   "dependencies": {
-    "@easypizi/ui": "^2.1.0",
+    "@easypizi/ui": "^0.0.1",
     "storybook-dark-mode": "^3.0.1",
     "styled-components": "^5.3.11"
   }
