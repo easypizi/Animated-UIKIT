@@ -25,6 +25,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "husky": "^8.0.0",
     "lerna": "^7.1.5",
     "typescript": "^5.1.6",
