@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_easypizi_storybook=self.webpackChunk_easypizi_storybook||[]).push([[889],{"../../../node_modules/@storybook/components/dist/syntaxhighlighter-B5GMVT5T.mjs":(o,s,e)=>{e.r(s),e.d(s,{SyntaxHighlighter:()=>t.bF,createCopyToClipboardFunction:()=>t.zH,default:()=>t.L0});var t=e("../../../node_modules/@storybook/components/dist/chunk-LWG3MFN2.mjs")}}]);
