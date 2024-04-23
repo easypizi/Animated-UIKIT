@@ -1,5 +1,6 @@
 {
   "name": "@easypizi/root",
+  "homepage": "http://easypizi.github.io/Animated-UIKIT",
   "private": true,
   "workspaces": [
     "packages/tools/*",
@@ -12,6 +13,8 @@
   },
   "scripts": {
     "build": "lerna run build --concurrency=2",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d packages/apps/storybook/storybook-static",
     "watch": "lerna run watch --parallel --stream",
     "version-update": "lerna version --no-git-tag-version --no-push",
     "lint": "lerna run lint --stream --concurrency=5 -- --max-warnings=0",

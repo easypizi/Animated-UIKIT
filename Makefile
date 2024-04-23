@@ -18,3 +18,6 @@ icons:
 
 version: 
 	npm run version-update
+	
+deploy: 
+	npm run deploy
