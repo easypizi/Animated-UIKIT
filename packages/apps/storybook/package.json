@@ -1,9 +1,10 @@
 {
   "name": "@easypizi/storybook",
   "version": "0.0.1",
+  "homepage": "http://easypizi.github.io/Animated-UIKIT",
   "scripts": {
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build": "storybook build"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.6",
